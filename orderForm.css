@@ -1,0 +1,364 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+}
+.header{
+  min-height: 20vh;
+  width: 100%;
+  background-image: url("background.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-bottom: 1px solid #000000;
+}
+.content{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.header h1{
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 6%;
+  align-items: center;
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 40px 15px;
+  position: relative;
+}
+.nav-links ul li a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+}
+.nav-links ul li::after{
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background: #d4a886;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+.link-icons{
+  display: flex;
+	flex-grow: 1;
+	flex-basis: 0;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+}
+.link-icons a{
+  text-decoration: none;
+	color: #000000;
+	padding: 10px 10px;
+}
+.link-icons a::after{
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background: #d4a886;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.link-icons a:hover::after{
+  width: 100%;
+}
+.link-icons a i {
+	font-size: 18px;
+}
+.link-icons a span {
+	display: inline-block;
+	text-align: center;
+	background-color: #000000;
+	border-radius: 50%;
+	color: #000000;
+	font-size: 12px;
+	line-height: 16px;
+	width: 16px;
+	height: 16px;
+	font-weight: bold;
+	position: absolute;
+	top: 22px;
+	right: 0;
+}
+.toggle {
+  display: none;
+}
+
+.footer img{
+  float: left;
+}
+.footer{
+  width: 100%;
+  min-height: 20vh;
+  background-image: url("background.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: right;
+  position: relative;
+}
+.footer-contents ul li {
+  list-style: none;
+  display: block;
+  padding: 8px 12px;
+  position: relative;
+}
+.footer-contents ul li a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+}
+.footer-contents p{
+  font-size: 18px;
+}
+.link-icons i{
+  padding-right: 10px;
+}
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 10px 30px;
+  font-size: 20px;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+}
+.hero-btn:hover{
+  border: 1px solid #d4a886;
+  background:#d4a886;
+  transition: 1s;
+}
+.checkout-container{
+  display: block;
+  text-align: center;
+}
+.checkout-container h1{
+  font-size: 24px;
+}
+.checkout-container p{
+  font-size: 18px;
+}
+.checkout-container form{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  align-items: center;
+}
+.customer-info{
+  display: inline-block;
+  text-align: center;
+  padding: 5px 5px 10px 5px;
+  width: 800px;
+  align-items: center;
+}
+.customer-info label{
+  display: block;
+  float: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.customer-info input[type="text"]{
+  float: center;
+  padding-right: 20px;
+  width: 250px;
+  height: 30px;
+}
+legend{
+  font-size: 20px;
+  font-weight: bold;
+}
+.shipping-info{
+  display: inline-block;
+  text-align: center;
+  padding: 5px 5px 10px 5px;
+  width: 800px;
+  align-items: center;
+}
+.shipping-info label{
+  display: block;
+  float: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.shipping-info input[type="text"]{
+  float: center;
+  padding-right: 20px;
+  width: 250px;
+  height: 30px;
+}
+.province{
+  font-size: 20px;
+  width: 250px;
+  height: 30px;
+}
+.payment-info{
+  display: inline-block;
+  text-align: center;
+  padding: 5px 5px 10px 5px;
+  width: 800px;
+  align-items: center;
+}
+.payment-info label{
+  display: block;
+  float: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.payment-info input[type="text"]{
+  float: center;
+  padding-right: 20px;
+  width: 250px;
+  height: 30px;
+}
+.payment-method{
+  margin-top: 10px;
+  font-size: 20px;
+  width: 250px;
+  height: 30px;
+}
+.buttons {
+  padding-top: 15px;
+	text-align: center;
+	padding-bottom: 40px;
+}
+.buttons input[type="submit"] {
+	margin-left: 5px;
+	padding: 12px 20px;
+	border: 1px solid #000000;
+	background: transparent;
+	color: #000000;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+  text-transform: uppercase;
+}
+.buttons input[type="submit"]:hover {
+	background: #d4a886;
+}
+.required::after{
+  content: ' *';
+  color: red;
+}
+@media screen and (max-width:768px){
+  .header{
+    justify-content: space-between;
+    min-height: 20vh;
+  }
+  .header h1{
+    font-size: 20px;
+  }
+  .nav-links ul li{
+    display: block;
+  }
+  .nav-links{
+    position: absolute;
+    background:#d4a886;
+    height: 100vh;
+    width: 200px;
+    top:0;
+    right:-200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  .nav-links ul{
+    padding: 10px;
+  }
+  .nav-links .toggle{
+    display: block;
+    color: #000000;
+    margin: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .link-icons {
+    display: flex;
+    width: 100px;
+    text-align: right;
+  }
+ .link-icons .toggle{
+    display: block;
+    color: #000000;
+    margin: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .footer{
+    height: auto;
+  }
+  .footer .link-icons{
+    display: flex;
+  }
+  .checkout-container h1{
+    font-size: 20px;
+  }
+  .checkout-container p{
+    font-size: 16px;
+  }
+  .customer-info{
+    width: 90%;
+  }
+  .customer-info legend{
+    font-size: 18px;
+  }
+  .customer-info label{
+  font-size: 18px;
+  }
+  .customer-info input[type="text"]{
+    height:25px;
+  }
+  .shipping-info{
+    width: 90%;
+  }
+  .shipping-info legend{
+    font-size: 18px;
+  }
+  .shpping-info label{
+  font-size: 18px;
+  }
+  .shipping-info input[type="text"]{
+    height:25px;
+  }
+  .province{
+    font-size: 18px;
+    height: 25px;
+  }
+  .payment-info{
+    width: 90%;
+  }
+  .payment-info legend{
+    font-size: 18px;
+  }
+  .payment-info label{
+  font-size: 18px;
+  }
+  .payment-info input[type="text"]{
+    height:25px;
+  }
+  .payment-method{
+    font-size: 18px;
+    height: 25px;
+  }
+}

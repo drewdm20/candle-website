@@ -1,0 +1,435 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+}
+.header{
+  min-height: 50vh;
+  width: 100%;
+  background-image: url("background.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-bottom: 1px solid #000000;
+}
+.toggle {
+  display: none;
+}
+
+.content{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.header h1{
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 8%;
+  align-items: center;
+}
+.nav-links{
+  flex: 2;
+  text-align: center;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 40px 15px;
+  position: relative;
+  align-items: center;
+}
+.nav-links ul li a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+}
+.nav-links ul li::after{
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background: #d4a886;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+.link-icons{
+  display: flex;
+	flex-grow: 1;
+	flex-basis: 0;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+}
+.link-icons a{
+  text-decoration: none;
+	color: #000000;
+	padding: 10px 10px;
+  padding-right: 5px;
+}
+.link-icons a::after{
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background: #d4a886;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.link-icons a:hover::after{
+  width: 100%;
+}
+.link-icons a i {
+	font-size: 18px;
+}
+.link-icons a span {
+	display: inline-block;
+	text-align: center;
+	background-color: #000000;
+	border-radius: 50%;
+	color: #000000;
+	font-size: 12px;
+	line-height: 16px;
+	width: 16px;
+	height: 16px;
+	font-weight: bold;
+	position: absolute;
+	top: 22px;
+	right: 0;
+  padding-right: 5px;
+}
+.header2{
+  width: 100%;
+  min-height: 70vh;
+  background-image: url("coconut.jpg"),url("beeswax.jpg"),url("soy wax.jpg");
+  background-position: left, center, right;
+  background-repeat: no-repeat, no-repeat,no-repeat;
+  margin: auto;
+  text-align: center;
+  padding-top: 30px;
+}
+.h2-info h1{
+  font-size: 30px;
+}
+.h2-info p{
+  color: #000000;
+  font-size: 20px;
+  line-height: 22px;
+  padding: 10px;
+}
+.candles img{
+  float: right;
+  width: 25%;
+}
+.candles{
+  width: 75%;
+  min-height: 40vh;
+  text-align: left;
+  margin: auto;
+  padding-top: 20px;
+
+}
+.candle-container h1{
+  font-size: 25px;
+}
+.candle-container p{
+  font-size: 20px;
+}
+.wax-products img{
+  float: left;
+  width: 25%;
+}
+.wax-products{
+  width: 75%;
+  min-height: 40vh;
+  text-align: right;
+  margin: auto;
+  padding-top: 20px;
+
+}
+.wax-container h1{
+  font-size: 25px;
+}
+.wax-container p{
+  font-size: 20px;
+}
+.car-fragrances img{
+  float: right;
+  width: 25%;
+}
+.car-fragrances{
+  width: 75%;
+  min-height: 40vh;
+  text-align: left;
+  margin: auto;
+  padding-top: 20px;
+
+}
+.fragrance-container h1{
+  font-size: 25px;
+}
+.fragrance-container p{
+  font-size: 20px;
+}
+.diffusers img{
+  float: left;
+  width: 25%;
+}
+.diffusers{
+  width: 75%;
+  min-height: 40vh;
+  text-align: right;
+  margin: auto;
+  padding-top: 20px;
+
+}
+.diffuser-container h1{
+  font-size: 25px;
+}
+.diffuser-container p{
+  font-size: 20px;
+}
+.sprays img{
+  float: right;
+  width: 25%;
+}
+.sprays{
+  width: 75%;
+  min-height: 40vh;
+  text-align: left;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.spray-container h1{
+  font-size: 25px;
+}
+.spray-container p{
+  font-size: 20px;
+}
+.footer img{
+  float: left;
+}
+.footer a img{
+  cursor: pointer;
+  }
+.footer{
+  width: 100%;
+  min-height: 20vh;
+  background-image: url("background.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: right;
+  position: relative;
+}
+.footer-contents ul li {
+  list-style: none;
+  display: block;
+  padding: 8px 12px;
+  position: relative;
+}
+.footer-contents ul li a{
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+}
+.footer-contents p{
+  font-size: 18px;
+}
+.link-icons i{
+  padding-right: 10px;
+}
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 10px 30px;
+  font-size: 20px;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
+  border-radius: 5px;
+}
+.hero-btn:hover{
+  border: 1px solid #d4a886;
+  background:#d4a886;
+  transition: 1s;
+}
+.featured-information{
+  width: 100%;
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  text-align: center;
+}
+.featured-information h1{
+  font-size: 30px;
+}
+
+@media screen and (max-width: 768px){
+  .header{
+    justify-content: space-between;
+    min-height: 40vh;
+  }
+  .featured-information{
+    top: 75%;
+  }
+  .featured-information h1 {
+    font-size: 18px;
+    flex-basis: auto;
+  }
+  .nav-links ul li{
+    display: block;
+  }
+  .nav-links{
+    position: absolute;
+    background:#d4a886;
+    height: 100vh;
+    width: 200px;
+    top:0;
+    right:-200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  .nav-links ul{
+    padding: 10px;
+  }
+  .nav-links .toggle{
+    display: block;
+    color: #000000;
+    margin: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .featured-information .hero-btn{
+    display: none;
+  }
+  .link-icons {
+    display: flex;
+    width: 100px;
+  }
+ .link-icons .toggle{
+    display: block;
+    color: #000000;
+    margin: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .header2{
+    min-height: 60vh;
+    background-size: 140px,140px,140px;
+    background-position: left bottom,center bottom, right bottom;
+    padding-top: 20px;
+  }
+  .h2-info h1{
+    font-size: 20px;
+  }
+  .h2-info p{
+    font-size: 18px;
+  }
+  .candles img{
+    width: 150px;
+    height: 150px;
+  }
+  .candles{
+   width: 75%;
+   min-height: 50vh;
+   padding-top: 30px;
+ }
+ .candle-container h1{
+   font-size: 20px;
+   padding-bottom: 10px;
+ }
+ .candle-container p{
+  display: none;
+ }
+ .hero-btn{
+   padding: 8px 12px;
+   font-size: 17px;
+ }
+ .wax-products img{
+   width: 150px;
+   height: 150px;
+ }
+ .wax-products{
+   width: 75%;
+   min-height: 50vh;
+   padding-top: 30px;
+ }
+ .wax-container h1{
+   font-size: 20px;
+   padding-bottom: 10px;
+ }
+ .wax-container p{
+  display: none;
+ }
+ .car-fragrances img{
+   width: 150px;
+   height: 150px;
+ }
+ .car-fragrances{
+   width: 75%;
+   min-height: 50vh;
+   padding-top: 30px;
+ }
+ .fragrance-container h1{
+   font-size: 20px;
+   padding-bottom: 10px;
+ }
+ .fragrance-container p{
+  display: none;
+ }
+ .diffusers img{
+   width: 150px;
+   height: 150px;
+ }
+ .diffusers{
+   width: 75%;
+   min-height: 50vh;
+   padding-top: 30px;
+ }
+ .diffuser-container h1{
+   font-size: 20px;
+   padding-bottom: 10px;
+ }
+ .diffuser-container p{
+  display: none;
+ }
+ .sprays img{
+   width: 150px;
+   height: 150px;
+ }
+ .sprays{
+   width: 75%;
+   min-height: 50vh;
+   padding-top: 30px;
+ }
+ .spray-container h1{
+   font-size: 20px;
+   padding-bottom: 10px;
+ }
+ .spray-container p{
+  display: none;
+ }
+ .footer{
+   min-height: 40vh;
+ }
+ .footer .link-icons{
+   display: flex;
+ }
+}
